@@ -1,7 +1,24 @@
 aid: tara-ai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tara-ai.png
 name: Tara Ai
-description: Tara Ai is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Tara AI (Y Combinator W15, originally Gradberry) was a San Jose-based engineering
+  efficiency platform that used fine-tuned LLMs over source control and project data to measure
+  cycle times, benchmarks, and delivery velocity, integrating with GitHub, GitLab, Jira, and
+  Slack. Backed by Aspect Ventures, Y Combinator, and Slack Fund (~$13M raised). As of July 2026
+  the company is listed as permanently closed on Crunchbase and tara.ai is a parked domain; no
+  public API, developer docs, or SDKs were ever published, and the TARAAI GitHub org has no
+  public repositories.
 url: https://raw.githubusercontent.com/api-evangelist/tara-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +28,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Engineering Efficiency
+- Project Management
+- Artificial Intelligence
+- Developer Tools
+- Software Delivery
+- Defunct
 apis: []
+common:
+- type: DomainSecurity
+  url: security/tara-ai-domain-security.yml
+- type: Website
+  url: https://tara.ai
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1

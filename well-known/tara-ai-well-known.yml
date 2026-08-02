@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+host: https://tara.ai
+note: >-
+  tara.ai is a parked domain (GoDaddy parking lander) as of 2026-07-21 and the company is
+  listed as permanently closed on Crunchbase. The parking host returns a catch-all HTTP 200
+  with a 114-byte JavaScript redirect to /lander for every path, so the 200 statuses below
+  are NOT real well-known documents and no raw files were saved. robots.txt and llms.txt on
+  this host are generic parking-infrastructure files (LLM-Policy / Disallow-Training
+  directives), not company-published artifacts, so no WellKnown/SecurityTxt/LLMsTxt rating
+  pointers were wired.
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  catch_all_lander: true
+- path: /.well-known/openid-configuration
+  status: 200
+  catch_all_lander: true
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  catch_all_lander: true
+- path: /.well-known/api-catalog
+  status: 200
+  catch_all_lander: true
+- path: /.well-known/ai-plugin.json
+  status: 200
+  catch_all_lander: true
+- path: /llms.txt
+  status: 200
+  parking_boilerplate: true
+- path: /robots.txt
+  status: 200
+  parking_boilerplate: true
+dead_hosts:
+- api.tara.ai
+- docs.tara.ai
+- app.tara.ai
+- developer.tara.ai
+- status.tara.ai
+- trust.tara.ai
